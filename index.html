@@ -159,9 +159,9 @@
       c.textContent = tc(timecode);
       b.style.backgroundColor = colors[Math.floor(currentFrame / 48) % 6];
 
-      requestAnimationFrame(loop);
+      v.requestVideoFrameCallback(loop);
     }
-    requestAnimationFrame(loop);
+    v.requestVideoFrameCallback(loop);
   </script>
 </body>
 
