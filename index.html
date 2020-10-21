@@ -132,7 +132,7 @@
       const time = v.currentTime - drift;
       t.textContent = tc(time);
       const frame = Math.round(time / FRAME);
-      if (paintCount) {
+      if (paintCount && null) {
         const currentPaintCount = v[paintCount];
         a.textContent = zpad(currentPaintCount, 5);
         const diffPaintCount = currentPaintCount - lastPaintCount;
